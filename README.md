@@ -14,3 +14,11 @@ The models used for classification are:
 - The **Recurrent Neural Network (RNN)**: Selected for its practicality and scalability, especially with more complex datasets.
 
 The results of both methods are then compared to evaluate their performance.
+
+## Used Datasets
+### For training:
+- [given dataset](https://drive.google.com/file/d/1_SHjQJVxZdr_LW2aIHAiOSBPWWGWd7Bs/view?usp=drive_link)
+- [open source dataset](https://www.kaggle.com/datasets/kundanbedmutha/customer-sentiment-dataset)
+### For testing:
+- [given dataset](https://drive.google.com/file/d/1-8lz8Kf6XjQdeOZ1Hew1ysxpGz6ZOEg6/view?usp=drive_link)
+- [open source dataset](https://www.kaggle.com/datasets/ahmedabdulhamid/reviews-dataset)
