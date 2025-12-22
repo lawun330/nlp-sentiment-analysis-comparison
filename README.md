@@ -10,7 +10,7 @@ Several preprocessing techniques are used to improve the performance of NLP mode
 - Padding sequences to ensure uniform input lengths.
 
 The models used for classification are:
-- Naive Bayes Classifier (NBC): Chosen due to the relatively small size of the dataset.
-- Recurrent Neural Network (RNN): Selected for its practicality and scalability, especially with more complex datasets.
+- The **Naive Bayes Classifier (NBC)**: Chosen due to the relatively small size of the dataset.
+- The **Recurrent Neural Network (RNN)**: Selected for its practicality and scalability, especially with more complex datasets.
 
 The results of both methods are then compared to evaluate their performance.
