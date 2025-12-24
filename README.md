@@ -15,10 +15,18 @@ The models used for classification are:
 
 The results of both methods are then compared to evaluate their performance.
 
-## Used Datasets
-### For training:
+## Datasets
+
+For training: Both models use the same dataset, each in its required format.
+- **NBC**: Full preprocessed text (no truncation).
+- **RNN**: Padded to `max_length`.
+
+For training: Both models see the same test samples, but each uses its natural input format to give a fair and realistic comparison.
+- **NBC**: Full preprocessed text (no truncation).
+- **RNN**: Truncated/padded to the same `max_length` as training.
+
+### Sources for training dataset:
 - [given dataset](https://drive.google.com/file/d/1_SHjQJVxZdr_LW2aIHAiOSBPWWGWd7Bs/view?usp=drive_link)
 - [open source dataset](https://www.kaggle.com/datasets/kundanbedmutha/customer-sentiment-dataset)
-### For testing:
-- [given dataset](https://drive.google.com/file/d/1-8lz8Kf6XjQdeOZ1Hew1ysxpGz6ZOEg6/view?usp=drive_link)
+### Sources for testing dataset:
 - [open source dataset](https://www.kaggle.com/datasets/ahmedabdulhamid/reviews-dataset)
