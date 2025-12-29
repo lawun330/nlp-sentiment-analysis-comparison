@@ -25,8 +25,8 @@ For training: Both models see the same test samples, but each uses its natural i
 - **NBC**: Full preprocessed text (no truncation).
 - **RNN**: Truncated/padded to the same `max_length` as training.
 
-### Sources for training dataset:
-- [given dataset](https://drive.google.com/file/d/1_SHjQJVxZdr_LW2aIHAiOSBPWWGWd7Bs/view?usp=drive_link)
-- [open source dataset](https://www.kaggle.com/datasets/kundanbedmutha/customer-sentiment-dataset)
-### Sources for testing dataset:
-- [open source dataset](https://www.kaggle.com/datasets/ahmedabdulhamid/reviews-dataset)
+### Dataset Sources
+- [given dataset for training](https://drive.google.com/file/d/1_SHjQJVxZdr_LW2aIHAiOSBPWWGWd7Bs/view?usp=drive_link)
+- [open source dataset for training](https://www.kaggle.com/datasets/kundanbedmutha/customer-sentiment-dataset)
+- [open source dataset for testing](https://www.kaggle.com/datasets/ahmedabdulhamid/reviews-dataset)
+- [open source dataset for everything](https://www.kaggle.com/datasets/kazanova/sentiment140)
