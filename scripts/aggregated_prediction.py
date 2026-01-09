@@ -57,6 +57,10 @@ def get_avg_probs(phrases, model, model_name, total_classes=3, tokenizer=None, m
             sequences = tokenizer.texts_to_sequences([phrase])
             padded_sequences = pad_sequences(sequences, maxlen=maxlen, padding='post')
             y_pred_probs = model.predict(padded_sequences)
+        elif model_name=="logr":
+            y_pred_probs = model.predict_proba([phrase])
+        elif model_name=="svm":
+            y_pred_probs = model.predict_proba([phrase])
         else:
             raise ValueError(f"Invalid model name: {model_name}")
 
@@ -78,10 +82,12 @@ def get_aggregated_prediction(sentence, model, model_name, chunk_size=4, total_c
     Args:
         sentence (str): Input sentence to predict
         model: Trained classifier model with predict_proba method
+        model_name (str): Name of the model
         chunk_size (int): Number of words per chunk (default: 4)
         total_classes (int): Total number of classes (default: 3)
         tokenizer: Tokenizer object for the model
-        
+        maxlen: Maximum length of the sequences
+
     Returns:
         int: Predicted class index (the class with the highest average 
              probability across all phrase predictions)
